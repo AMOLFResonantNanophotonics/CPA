@@ -27,7 +27,7 @@ reload(Houel_autocorr)
 # =============================================================================
 # Simulated or measured data
 # =============================================================================
-Simulated_insteadof_MeasuredData = False
+Simulated_insteadof_MeasuredData = True
 
 # =============================================================================
 # CPA or binned analysis
@@ -37,7 +37,7 @@ CPA_insteadof_binned = True
 # =============================================================================
 # Do you want to see all the plots?
 # =============================================================================
-Show_intermediateplots = False
+Show_intermediateplots = True
 
 ###############################################################
 #   
@@ -46,7 +46,7 @@ Show_intermediateplots = False
 #
 ###############################################################
 
-MakeChangepoints = True
+MakeChangepoints = False
 
 CPA_wrapper.CPA_wrapper(MakeChangepoints, Simulated_insteadof_MeasuredData, CPA_insteadof_binned)
 
@@ -58,8 +58,8 @@ CPA_wrapper.CPA_wrapper(MakeChangepoints, Simulated_insteadof_MeasuredData, CPA_
 #
 ###############################################################
 
-MakeCrossCorrs = True
-MakeLifetimelst  = True
+MakeCrossCorrs = False
+MakeLifetimelst  = False
 segmented_crosscorrs.Segmented_crosscorrs(MakeCrossCorrs, MakeLifetimelst, Simulated_insteadof_MeasuredData, CPA_insteadof_binned)
 
 ###############################################################
@@ -74,7 +74,7 @@ PlotOccupation = True
 
 grouping_wrapper.grouping_wrapper(MakeGrouping, PlotBIC, PlotOccupation, Show_intermediateplots, CPA_insteadof_binned, Simulated_insteadof_MeasuredData)
 
-
+'''
 ###############################################################
 #   
 #   Run scipts that plot the results of CPA, using segmented data
@@ -101,8 +101,10 @@ if CPA_insteadof_binned:
 # Plot results from segmentation - FDID
 MakeFDIDs = True
 PlotFDIDs = True
+MakeFLIDs = True
+PlotFLIDs = True
 Show_intermediateplots = True
-FDID_wrapper.FDID_wrapper(MakeFDIDs, PlotFDIDs, Show_intermediateplots, CPA_insteadof_binned, Simulated_insteadof_MeasuredData)
+FDID_wrapper.FDID_wrapper(MakeFDIDs, PlotFDIDs, MakeFLIDs, PlotFLIDs, Show_intermediateplots, CPA_insteadof_binned, Simulated_insteadof_MeasuredData)
 
 
 
@@ -139,3 +141,4 @@ MakeLongCorrs = True
 PlotLongCorrs = True
     
 Houel_autocorr.Houelautocorrelationanalysis(MakeLongCorrs, PlotLongCorrs, Show_intermediateplots, CPA_insteadof_binned, Simulated_insteadof_MeasuredData)
+'''

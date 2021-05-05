@@ -121,9 +121,10 @@ g2meta = {'tauStart_ns':-cc_g2range_ns, 'tauEnd_ns':cc_g2range_ns,
 
 
 # =============================================================================
-# memory effects
+# memory effects and FDID/FLID
 # =============================================================================
 maxdecayrate = 0.5 # in ns^-1
+maxlifteime  = 35 # in ns
 
 
 

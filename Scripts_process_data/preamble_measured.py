@@ -67,6 +67,7 @@ g2long_filename = 'Houel_autocorr.txt'
 grouping_filename = 'grouping.txt'
 switchinghist_filename = 'switchinghist.txt'
 FDID_filename = 'FDID.txt'
+FLID_filename = 'FLID.txt'
 FDID_master_filename = 'FDID_master.txt'
 
 
@@ -117,9 +118,9 @@ g2meta = {'tauStart_ns':-cc_g2range_ns, 'tauEnd_ns':cc_g2range_ns,
 
 
 # =============================================================================
-# memory effects
+# memory effects and FDID
 # =============================================================================
 maxdecayrate = 0.5 # in ns^-1
-
+maxlifteime  = 35 # in ns
     
 

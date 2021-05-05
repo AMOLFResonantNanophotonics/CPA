@@ -1,5 +1,6 @@
 """
 Auxiliary functions for constructing FDID diagrams
+! Take note not to confuse FDID and FLID diagrams
 
 Contains
 makeGaussian() -  Gaussian entry into FDID from a given segment
