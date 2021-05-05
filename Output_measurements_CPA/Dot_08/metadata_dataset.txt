@@ -1,9 +1,0 @@
-cts_chA: 2155457
-cts_chB: 1903580
-cts_chR: 4025117
-totalPhotonCount: 4059037
-maxEventTime_bin: 364500099931
-maxEventTime_ns: 60000361449.641914
-dtau_ns: 0.16461
-Tau0A_bin: 198
-Tau0B_bin: 191
